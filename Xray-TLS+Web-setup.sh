@@ -31,7 +31,7 @@ php_prefix="/usr/local/php"
 php_service="/etc/systemd/system/php-fpm.service"
 unset php_is_installed
 
-cloudreve_version="3.7.1"
+cloudreve_version="3.8.2"
 cloudreve_prefix="/usr/local/cloudreve"
 cloudreve_service="/etc/systemd/system/cloudreve.service"
 unset cloudreve_is_installed
@@ -147,7 +147,7 @@ check_script_update()
 #更新脚本
 update_script()
 {
-    if wget -O "${BASH_SOURCE[0]}" "https://github.com/bluejerry2021/Xray-script/raw/main/Xray-TLS+Web-setup.sh" || wget -O "${BASH_SOURCE[0]}" "https://github.com/kirin10000/Xray-script/raw/main/Xray-TLS+Web-setup.sh"; then
+    if wget -O "${BASH_SOURCE[0]}" "https://github.com/bluejerry2021/Xray-script/raw/main/Xray-TLS+Web-setup.sh" || wget -O "${BASH_SOURCE[0]}" "https://github.com/bluejerry2021/Xray-script/raw/main/Xray-TLS+Web-setup.sh"; then
         green "脚本更新完成，请重新运行脚本！"
         exit 0
     else
